@@ -49,9 +49,9 @@ a {
   // background-repeat: repeat-y;
   // background-position: left;
 
-  // @include big-desktop {
-  //   grid-template-columns: repeat(8,1fr);
-  // }
+  @include small-tablet {
+    grid-template-columns: repeat(8,1fr);
+  }
 }
 
 
@@ -64,28 +64,30 @@ a {
   bottom: 0;
   height: 100vh;
   max-width: 260px;
-  // @include big-desktop {
-  //   display: none;
-  // }
+  @include small-tablet {
+    display: none;
+  }
 }
 
 
-.aside__wrapper {
-}
 
 .site-container__main {
+  padding-left: 23px;
   grid-column: 4 / 9 span;
+  @include small-tablet {
+    grid-column: 8 span;
+  }
 
-  // @include big-desktop {
-  //   grid-column: 8 span;
-  // }
 
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(8,1fr);
-  column-gap: var(--grid-offset);
+  gap: var(--grid-offset);
+  @include big-mobile {
+    grid-template-columns: repeat(4,1fr);
+  }
 
 }
 
@@ -180,3 +182,9 @@ a {
   line-height: 110%;
 }
 
+
+@include small-tablet {
+  :root {
+    --grid-offset: 20px;
+  }
+}

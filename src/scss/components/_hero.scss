@@ -2,6 +2,13 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
+  @include tablet {
+    justify-content: center;
+  }
+
+  @include small-tablet {
+    justify-content: flex-start;
+  }
   &::after {
     content: "";
     position: absolute;
@@ -26,6 +33,9 @@
     line-height: 120%;
     text-transform: uppercase;
     color: var(--light-grey);
+    @include mobile {
+      font-size: 38px;
+    }
 
     span {
       font-weight: 800;
@@ -33,6 +43,9 @@
       line-height: 120%;
       text-transform: uppercase;
       color: var(--light-color);
+      @include mobile {
+        font-size: 62px;
+      }
     }
   }
 
@@ -49,6 +62,9 @@
   &__box {
     display: flex;
     gap: 40px;
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   &__btn {
