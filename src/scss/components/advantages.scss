@@ -8,10 +8,11 @@
 
   &__list {
     grid-template-columns: repeat(4,1fr);
+
     @include small-tablet {
       grid-template-columns: repeat(8,1fr);
     }
-
+    
     @include big-mobile {
       grid-template-columns: repeat(4,1fr);
     }

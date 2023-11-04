@@ -37,7 +37,9 @@
 
 
 .footer-nav {
-
+  @include big-desktop {
+    display: none;
+  }
 
   &__list {
     display: flex;
