@@ -10,12 +10,27 @@
 
   &__info {
     max-width: 400px;
+    padding: 47px 40px;
+    background-color: #F4F7F5;
     @include big-desktop {
       max-width: 100%;
     }
-    padding: 47px 40px;
-    background-color: #F4F7F5;
 
+    @include small-mobile {
+      padding: 25px;
+    }
+
+
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: 20px;
+    color: var(--dark-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
   }
 
   &__img {
@@ -43,22 +58,19 @@
     margin-bottom: 20px;
   }
 
-  &__info-descr {
-    margin: 0;
-    margin-bottom: 20px;
-    color: var(--dark-color);
-    font-family: Open Sans;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 24px */
-  }
+
 
   &__info-btn {
     padding: 14px 46px;
     min-width: 260px;
     min-height: 48px;
     border: 1px solid var(--dark-color);
+    @include small-mobile {
+      font-size: 14px;
+      min-width: auto;
+      max-width: 100%;
+      padding: 14px 20px;
+    }
   }
 
 }

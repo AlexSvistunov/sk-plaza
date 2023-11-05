@@ -37,6 +37,10 @@
       font-size: 38px;
     }
 
+    @include small-mobile {
+      font-size: 30px;
+    }
+
     span {
       font-weight: 800;
       font-size: 88px;
@@ -45,6 +49,10 @@
       color: var(--light-color);
       @include mobile {
         font-size: 62px;
+      }
+
+      @include small-mobile {
+        font-size: 43px;
       }
     }
   }
@@ -57,6 +65,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: 25.2px;
+    @include small-mobile {
+      font-size: 16px;
+    }
   }
 
   &__box {
@@ -75,18 +86,35 @@
     line-height: 150%;
     text-align: center;
     color: var(--light-color);
+
+    @include small-mobile {
+      min-width: auto;
+      max-width: 80%;
+      padding: 10px 20px;
+    }
   }
 
   &__btn-book {
     min-width: 260px;
     background-color: var(--accent-color);
 
+    @include small-mobile {
+      padding: 10px;
+      min-width: auto;
+      max-width: 80%;
+    }
+
   }
 
   &__btn-more {
+    min-width: auto;
     min-width: 160px;
     background-color: transparent;
     border: 1px solid var(--light-color);
+    @include small-mobile {
+      min-width: auto;
+      max-width: 80%;
+    }
   }
 
 

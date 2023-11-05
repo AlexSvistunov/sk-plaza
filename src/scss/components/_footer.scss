@@ -6,6 +6,9 @@
 
   &__logo {
     background-image: url('../img/footer-logo.svg');
+    @include mobile {
+      display: none;
+    }
   }
   &__container {
     display: flex;

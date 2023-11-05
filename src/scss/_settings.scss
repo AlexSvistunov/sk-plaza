@@ -21,6 +21,7 @@ html {
   min-height: 100%;
   font-size: 16px;
   color: var(--dark-color);
+
 }
 
 .page__body.lock {
@@ -80,6 +81,10 @@ a {
   grid-column: 4 / 9 span;
   @include small-tablet {
     grid-column: 8 span;
+  }
+
+  @include tablet {
+    padding-left: 0;
   }
 
 
@@ -184,11 +189,20 @@ a {
   font-size: 44px;
   font-weight: 700;
   line-height: 110%;
+  @include mobile {
+    font-size: 30px;
+  }
 }
 
 
 @include small-tablet {
   :root {
     --grid-offset: 20px;
+  }
+}
+
+@include mobile {
+  :root {
+   --offset: 40px;
   }
 }
