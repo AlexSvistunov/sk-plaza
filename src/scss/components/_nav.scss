@@ -1,0 +1,29 @@
+
+.nav {
+
+  margin-bottom: 40px;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__checklist {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+  }
+
+  &__checklist-link {
+    color: var(--accent-color);
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &__link {
+    color: var(--accent-color);
+  }
+
+}

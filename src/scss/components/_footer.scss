@@ -31,6 +31,13 @@
     font-size: 11px;
   }
 
+  &__burger {
+    display: none;
+    @include small-tablet {
+      display: block;
+    }
+  }
+
 
 
 }

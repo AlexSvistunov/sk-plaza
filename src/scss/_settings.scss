@@ -23,6 +23,10 @@ html {
   color: var(--dark-color);
 }
 
+.page__body.lock {
+  overflow-y: hidden;
+}
+
 img {
   display: block;
   height: auto;
@@ -143,7 +147,7 @@ a {
 .big-container {
   max-width: 1061px;
   margin: 0 auto;
-  // padding: 0 var(--container-offset);
+  padding: 0 var(--container-offset);
 }
 
 .js-focus-visible :focus:not(.focus-visible) {

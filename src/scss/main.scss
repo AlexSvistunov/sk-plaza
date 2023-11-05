@@ -5,6 +5,8 @@
 @import "settings";
 
 // подключения компонентов страницы
+@import "./components/menu";
+@import "./components/nav";
 @import "./components/header";
 @import "./components/aside";
 @import "./components/hero";

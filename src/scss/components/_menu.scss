@@ -1,0 +1,52 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  @include small-tablet {
+    position: absolute;
+    top: 62px;
+    left: 0;
+    height: 100vh;
+    z-index: 20;
+    width: 100%;
+    background-color: var(--grey-color);
+  }
+  &__btn {
+    margin-bottom: 40px;
+    border: 1px solid var(--light-color);
+    color: var(--light-color);
+    padding: 13px 22px;
+    font-size: 14px;
+    background-color: transparent;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__box-mail {
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    gap: 8px;
+    color: var(--light-color);
+
+    svg {
+      fill: var(--accent-color);
+    }
+  }
+
+  &__box-phone {
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    color: var(--light-color);
+    gap: 8px;
+
+    svg {
+      fill: var(--accent-color);
+    }
+  }
+}

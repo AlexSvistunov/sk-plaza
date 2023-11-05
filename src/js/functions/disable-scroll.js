@@ -12,3 +12,5 @@ export const disableScroll = () => {
   vars.bodyEl.dataset.position = pagePosition;
   vars.bodyEl.style.top = `-${pagePosition}px`;
 }
+
+
