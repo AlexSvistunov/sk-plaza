@@ -35,11 +35,13 @@
     }
   }
   &__logo {
+    @include bg-cover;
+    
     display: inline-block;
     margin-right: 21px;
     // margin-bottom: 20px;
     background-image: url('../img/logo.svg');
-    @include bg-cover;
+
   }
 
   &__address {

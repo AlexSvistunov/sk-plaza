@@ -10,6 +10,8 @@
     justify-content: flex-start;
   }
   &::after {
+    @include bg-cover;
+    
     content: "";
     position: absolute;
     z-index: -1;
@@ -18,7 +20,6 @@
     right: 0;
     bottom: 0;
     background-image: url('../img/hero-bg.jpg');
-    @include bg-cover;
   }
 
   &__inner {
