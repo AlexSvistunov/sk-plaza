@@ -63,6 +63,7 @@ a {
 
 .site-container__aside {
   position: fixed;
+  z-index: 40;
   top: 0;
   padding: 24px;
   grid-column: 3 span;
@@ -72,6 +73,7 @@ a {
   @include small-tablet {
     display: none;
   }
+
 }
 
 
@@ -215,4 +217,8 @@ a {
   :root {
    --offset: 40px;
   }
+}
+
+.swiper.swiper-z {
+  z-index: -1;
 }

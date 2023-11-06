@@ -1,9 +1,5 @@
 .gallery {
 
-  &__slider {
-    z-index: -1;
-  }
-
   @include small-tablet {
     padding-top: 63px;
   }
