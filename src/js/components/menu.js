@@ -2,6 +2,7 @@ const headerMenu = document.querySelector('.header__menu');
 const burger = document.querySelector('.burger');
 const pageBody = document.querySelector('.page__body');
 // const footerBurger = document.querySelector('.footer__burger');
+const footer = document.querySelector('.footer');
 
 const links = document.querySelectorAll('a[data-scroll]');
 links.forEach(link => {
@@ -10,6 +11,10 @@ links.forEach(link => {
     burger.classList.remove('burger--active');
     pageBody.classList.remove('dis-scroll');
   });
+});
+
+burger.addEventListener('click', () => {
+  footer.classList.toggle('footer-z');
 });
 
 

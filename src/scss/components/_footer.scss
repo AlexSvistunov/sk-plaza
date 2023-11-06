@@ -4,6 +4,10 @@
   z-index: 10;
   background-color: var(--light-color);
 
+  &.footer-z {
+    z-index: -1;
+  }
+
   &__logo {
     background-image: url('../img/footer-logo.svg');
     @include mobile {
@@ -35,7 +39,7 @@
   }
 
   &__burger {
-    @include burger;  
+    @include burger;
     display: none;
     @include small-tablet {
       display: block;
