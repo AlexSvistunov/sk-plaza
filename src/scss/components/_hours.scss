@@ -1,0 +1,76 @@
+.hours {
+  padding: 80px 0;
+
+  @include tablet {
+    padding: 80px 0 40px;
+  }
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__days {
+    display: block;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+    margin-bottom: 16px;
+  }
+
+  &__block {
+    position: relative;
+    z-index: -1;
+    max-width: 368px;
+    border: 1px solid var(--accent-color);
+    padding: 20px 40px 20px 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @include small-mobile {
+      padding: 20px;
+    }
+  }
+
+  &__block-hours {
+    display: flex;
+    align-items: center;
+  }
+
+  &__block-num {
+    position: relative;
+    padding-right: 35px;
+    color: var(--accent-color);
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 84px */
+    @include small-mobile {
+      font-size: 30px;
+      padding-right: 25px;
+    }
+    span {
+      display: inline-block;
+      line-height: normal;
+      font-size: 32px;
+      position: absolute;
+      top: 8px;
+      right: 0;
+      @include small-mobile {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &__block-symbol {
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 150%;
+
+    @include small-mobile {
+      font-size: 35px;
+      padding: 0 10px;
+    }
+  }
+}

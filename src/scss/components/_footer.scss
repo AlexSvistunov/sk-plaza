@@ -35,6 +35,7 @@
   }
 
   &__burger {
+    @include burger;  
     display: none;
     @include small-tablet {
       display: block;
