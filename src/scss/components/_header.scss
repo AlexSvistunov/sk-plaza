@@ -12,11 +12,15 @@
   }
 
   &__menu {
-    display: none;
+    transform: translateX(-200%);
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
     padding: 24px;
 
     &.menu--active {
-      display: block;
+      opacity: 1;
+      transform: translateX(0);
+      transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
       overflow-y: auto;
     }
   }
