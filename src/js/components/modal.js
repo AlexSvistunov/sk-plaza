@@ -21,7 +21,8 @@ modalReview.querySelector('.modal__btn').addEventListener('click', function(){
   modalReview.classList.remove('active');
 });
 
-modalReview.querySelector('.modal-form__btn').addEventListener('click', function(){
+modalReview.querySelector('.modal-form__btn').addEventListener('click', function(e){
+  e.preventDefault();
   modalReview.classList.remove('active');
   modalFillForm.classList.add('active');
 
