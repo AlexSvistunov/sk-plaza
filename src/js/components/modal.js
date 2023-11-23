@@ -1,12 +1,34 @@
-// const modal = document.querySelector('.modal');
-// const contactBtn = document.querySelector('.contact__info-btn');
-// const modalClose = document.querySelector('.modal__btn');
-// contactBtn.addEventListener('click', function() {
-//   modal.classList.add('active');
-// });
+const getConsult = document.querySelector('.menu__btn');
+const modalCall = document.querySelector('.modal--call');
+const signUp = document.querySelector('.hero__btn');
+const modalReview = document.querySelector('.modal--review');
+const modalFillForm = document.querySelector('.modal--fillform');
+getConsult.addEventListener('click', function(){
+  modalCall.classList.add('active');
 
+});
 
-// modalClose.addEventListener('click', function() {
-//   modal.classList.remove('active');
-// });
+modalCall.querySelector('.modal__btn').addEventListener('click', function(){
+  modalCall.classList.remove('active');
+});
+
+signUp.addEventListener('click', function(){
+  modalReview.classList.add('active');
+
+});
+
+modalReview.querySelector('.modal__btn').addEventListener('click', function(){
+  modalReview.classList.remove('active');
+});
+
+modalReview.querySelector('.modal-form__btn').addEventListener('click', function(){
+  modalReview.classList.remove('active');
+  modalFillForm.classList.add('active');
+
+});
+
+modalFillForm.querySelector('.modal__btn').addEventListener('click', function(){
+  modalFillForm.classList.remove('active');
+});
+
 
