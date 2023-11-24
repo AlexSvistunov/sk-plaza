@@ -13,6 +13,10 @@
     height: 56px;
     padding: 13px 10px;
     border-bottom: 1px solid #8E9991;
+    @include tablet {
+      font-size: 18px;
+    }
+    
   }
 
   &__arrow {
@@ -48,6 +52,7 @@
   padding: 10px;
   border-bottom: 1px solid var(--green-100, #8E9991);
   background: var(--White, #FFF);
+
 
 }
 

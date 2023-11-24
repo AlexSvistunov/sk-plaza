@@ -21,6 +21,7 @@
   @include tablet {
     background-image: none;
     justify-content: center;
+    padding: 50px 25px;
   }
 
 
@@ -54,6 +55,9 @@
 .modal-form {
   &__title {
     margin-bottom: 16px;
+    @include small-tablet-close {
+      max-width: 30%;
+    }
   }
   &__descr {
     margin: 0;
@@ -83,7 +87,7 @@
   &__box {
     display: flex;
     gap: 40px;
-    @include big-mobile {
+    @include small-tablet-close {
       flex-direction: column;
     }
   }

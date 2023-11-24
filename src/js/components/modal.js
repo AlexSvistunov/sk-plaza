@@ -1,21 +1,25 @@
-const getConsult = document.querySelector('.menu__btn');
+const getConsult = document.querySelectorAll('#getConsult');
 const modalCall = document.querySelector('.modal--call');
-const signUp = document.querySelector('.hero__btn');
+const signUp = document.querySelectorAll('#signUp');
 const modalReview = document.querySelector('.modal--review');
 const modalFillForm = document.querySelector('.modal--fillform');
-getConsult.addEventListener('click', function(){
-  modalCall.classList.add('active');
 
-});
+getConsult.forEach(el => {
+  el.addEventListener('click', function(){
+    modalCall.classList.add('active');
+
+  });
+})
 
 modalCall.querySelector('.modal__btn').addEventListener('click', function(){
   modalCall.classList.remove('active');
 });
 
-signUp.addEventListener('click', function(){
-  modalReview.classList.add('active');
-
-});
+signUp.forEach(el => {
+  el.addEventListener('click', function(){
+    modalReview.classList.add('active');
+  });
+})
 
 modalReview.querySelector('.modal__btn').addEventListener('click', function(){
   modalReview.classList.remove('active');

@@ -9,6 +9,7 @@ dropdown.forEach(el => {
   const dropdownField = el.querySelector('.dropdown__field');
 
   dropdownBtn.addEventListener('click', function(e) {
+    e.preventDefault();
     e.stopPropagation();
     dropdownList.classList.toggle('dropdown__list--visible');
     dropdownBtn.classList.toggle('rotate');
