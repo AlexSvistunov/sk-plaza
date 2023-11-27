@@ -73,12 +73,14 @@
 
 
   &__btn {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid var(--accent-color);
     margin-bottom: 28px;
     min-width: 260px;
     min-height: 58px;
-    padding: 15px 50px;
+    padding: 15px 20px;
 
     @include small-mobile {
       font-size: 14px;
