@@ -4,9 +4,15 @@
   z-index: 42;
   background-color: var(--light-color);
 
-  &.footer-z {
-    z-index: -1;
+  @include small-tablet {
+    z-index: 2;
   }
+
+  // &.footer-z {
+  //   z-index: -1;
+  // }
+
+
 
   &__logo {
     background-image: url('../img/footer-logo.svg');
@@ -39,7 +45,6 @@
   }
 
   &__burger {
-    @include burger;
     display: none;
     @include small-tablet {
       display: block;
@@ -66,4 +71,8 @@
   &__link {
     font-size: 15px;
   }
+}
+
+.burger {
+  @include burger;
 }
