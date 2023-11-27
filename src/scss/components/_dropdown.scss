@@ -16,7 +16,7 @@
     @include tablet {
       font-size: 18px;
     }
-    
+
   }
 
   &__arrow {
@@ -29,6 +29,7 @@
 .dropdown__list {
   display: none;
   position: absolute;
+  overflow-y: auto;
   z-index: 5;
   width: 100%;
   top: 0;

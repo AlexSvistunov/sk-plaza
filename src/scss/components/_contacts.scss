@@ -73,6 +73,7 @@
 
 
   &__btn {
+    display: inline-block;
     border: 1px solid var(--accent-color);
     margin-bottom: 28px;
     min-width: 260px;
@@ -96,4 +97,10 @@
   &__link {
     text-decoration: underline;
   }
+}
+
+.map {
+  max-width: 100%;
+  width: 100%;
+  flex-grow: 1;
 }
