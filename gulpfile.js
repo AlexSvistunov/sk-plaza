@@ -34,6 +34,7 @@ const path = require('path');
 const zip = require('gulp-zip');
 const rootFolder = path.basename(path.resolve());
 
+
 // paths
 const srcFolder = './src';
 const buildFolder = './app';
@@ -50,11 +51,18 @@ const paths = {
   resourcesFolder: `${srcFolder}/resources`,
 };
 
+
 let isProd = false; // dev by default
 
 const clean = () => {
   return del([buildFolder])
 }
+
+
+const copyVideos = () => {
+  return src(`${srcFolder}/img/**/*.mp4`)
+    .pipe(dest(`${buildFolder}/img`));
+};
 
 //svg sprite
 const svgSprites = () => {
@@ -316,11 +324,11 @@ const toProd = (done) => {
   done();
 };
 
-exports.default = series(clean, htmlInclude, scripts, styles, resources, images, webpImages, svgSprites, watchFiles);
+exports.default = series(clean, htmlInclude, scripts, styles, resources, images, webpImages, svgSprites, copyVideos, watchFiles);
 
 exports.backend = series(clean, htmlInclude, scriptsBackend, stylesBackend, resources, images, webpImages, svgSprites)
 
-exports.build = series(toProd, clean, htmlInclude, scripts, styles, resources, images, webpImages, svgSprites, htmlMinify);
+exports.build = series(toProd, clean, htmlInclude, scripts, styles, resources, images, webpImages, svgSprites, copyVideos, htmlMinify);
 
 exports.cache = series(cache, rewrite);
 

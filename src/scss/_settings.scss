@@ -79,18 +79,24 @@ a {
 
 
 .site-container__main {
-  padding-left: 23px;
   grid-column: 4 / 9 span;
   @include small-tablet {
     grid-column: 8 span;
   }
 
-  @include tablet {
+
+  @include small-tablet-big {
+    padding-left: 15px;
+  }
+
+  @include small-tablet {
     padding-left: 0;
   }
 
 
 }
+
+
 
 .grid {
   display: grid;

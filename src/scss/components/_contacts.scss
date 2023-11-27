@@ -8,9 +8,14 @@
   }
 
   &__inner {
+    margin-left: -29px;
     display: flex;
     @include big-desktop {
       flex-direction: column;
+    }
+
+    @include small-tablet {
+      margin-left: 0;
     }
   }
 
