@@ -1,5 +1,7 @@
 .gallery {
-
+  &__slider {
+    margin-left: -31px;
+  }
   @include small-tablet {
     padding-top: 63px;
   }

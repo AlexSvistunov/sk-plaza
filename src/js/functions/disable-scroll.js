@@ -10,7 +10,7 @@ export const disableScroll = () => {
   vars.bodyEl.style.paddingRight = paddingOffset;
   vars.bodyEl.classList.add('dis-scroll');
   vars.bodyEl.dataset.position = pagePosition;
-  vars.bodyEl.style.top = `-${pagePosition}px`;
+  // vars.bodyEl.style.top = `-${pagePosition}px`;
 }
 
 

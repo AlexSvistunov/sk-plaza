@@ -2,7 +2,7 @@
   padding: var(--offset) 0;
 
   &__inner {
-    margin-left: -29px;
+    margin-left: -31px;
     display: flex;
     @include big-desktop {
       flex-direction: column;
@@ -63,6 +63,8 @@
     font-weight: 700;
     line-height: normal;
     margin-bottom: 20px;
+    margin-top: 5px;
+    line-height: 1;
   }
 
 
@@ -74,7 +76,7 @@
     border: 1px solid var(--dark-color);
     @include small-mobile {
       font-size: 14px;
-      min-width: auto;
+      min-width: 100%;
       max-width: 100%;
       padding: 14px 20px;
     }

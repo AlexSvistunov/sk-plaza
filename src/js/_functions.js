@@ -56,6 +56,7 @@ const sliders = document.querySelectorAll('.swiper');
 sliders.forEach((el) => {
   let swiper = new Swiper(el, {
     slidesPerView: 'auto',
+    loop: true,
     navigation: {
       nextEl: el.querySelector('.swiper-button-next'),
       prevEl: el.querySelector('.swiper-button-prev'),
