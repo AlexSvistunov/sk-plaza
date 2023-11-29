@@ -324,11 +324,11 @@ const toProd = (done) => {
   done();
 };
 
-exports.default = series(clean, htmlInclude, scripts, styles, resources, images, webpImages, svgSprites, copyVideos, watchFiles);
+exports.default = series(clean, htmlInclude, scripts, styles, resources, images,copyVideos, webpImages, svgSprites, watchFiles);
 
 exports.backend = series(clean, htmlInclude, scriptsBackend, stylesBackend, resources, images, webpImages, svgSprites)
 
-exports.build = series(toProd, clean, htmlInclude, scripts, styles, resources, images, webpImages, svgSprites, copyVideos, htmlMinify);
+exports.build = series(toProd, clean, htmlInclude, scripts, styles, resources, images, copyVideos, webpImages, svgSprites, htmlMinify);
 
 exports.cache = series(cache, rewrite);
 
