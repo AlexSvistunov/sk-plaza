@@ -1,7 +1,19 @@
+.aside-box {
+  position: relative;
+  z-index: 40;
+  // padding-right: 135px;
+  // margin-left: -135px;
+  grid-column: 3 span;
+}
 
+// @media (max-width: 1300px) {
+//   .aside-box {
+//     margin-left: 0;
+//   }
+// }
 
 .aside {
-  padding: 24px 24px;
+  // padding: 24px 24px;
   background-color: var(--grey-color);
   overflow-y: auto;
   @include tablet {
@@ -21,7 +33,7 @@
   &__wrapper {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
   &__logo {
@@ -32,6 +44,7 @@
   }
 
   &__address {
+    padding-left: 35px;
     margin-bottom: 40px;
     font-style: normal;
     font-weight: 400;

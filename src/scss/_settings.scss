@@ -57,7 +57,7 @@ a {
   // background-repeat: repeat-y;
   // background-position: left;
 
-  @include small-tablet {
+  @include tablet {
     grid-template-columns: repeat(8,1fr);
   }
 }
@@ -69,11 +69,11 @@ a {
   z-index: 40;
   top: 0;
   padding: 24px;
-  grid-column: 3 span;
   bottom: 0;
   height: 100vh;
-  max-width: 260px;
-  @include small-tablet {
+  max-width: 320px;
+  margin-left: -60px;
+  @include tablet {
     display: none;
   }
 
@@ -83,7 +83,7 @@ a {
 
 .site-container__main {
   grid-column: 4 / 9 span;
-  @include small-tablet {
+  @include tablet {
     grid-column: 8 span;
   }
 
